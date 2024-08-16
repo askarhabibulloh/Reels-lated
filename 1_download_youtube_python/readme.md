@@ -6,10 +6,35 @@
 Ini adalah instruksi untuk melakukan download video YouTube dengan Python menggunakan library [yt-dlp](https://pypi.org/project/yt-dlp/). Berikut adalah langkah-langkah yang harus dilakukan:
 
 - Melakukan instalasi Python
+- **Menginstal FFmpeg**
 - (Opsional) Mengaktifkan virtual environment
 - Memasang library yt-dlp
 - Unduh [skrip python](./main.py)
 - Menjalankan program python
+
+## Menginstal FFmpeg
+1. Untuk memastikan video yang diunduh dapat diproses dengan benar, Anda perlu menginstal FFmpeg. Ikuti langkah-langkah di bawah ini sesuai dengan sistem operasi Anda:
+
+    - **Windows:**
+      1. Unduh FFmpeg dari [tautan ini](https://ffmpeg.org/download.html).
+      2. Ekstrak file yang diunduh dan tambahkan direktori `bin` ke variabel lingkungan `PATH`.
+
+    - **macOS:**
+      ```bash
+      brew install ffmpeg
+      ```
+
+    - **Linux (Ubuntu/Debian):**
+      ```bash
+      sudo apt update
+      sudo apt install ffmpeg
+      ```
+
+2. Pastikan FFmpeg terinstal dengan benar dengan menjalankan perintah berikut di terminal atau command prompt:
+    ```bash
+    ffmpeg -version
+    ```
+   Perintah ini akan menampilkan versi FFmpeg yang terinstal.
 
 ## Melakukan Instalasi Python
 1. Jika belum memiliki Python terinstal, unduh dan instal dari [situs resmi Python](https://www.python.org/downloads/).
